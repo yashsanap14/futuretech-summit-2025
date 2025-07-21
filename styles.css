@@ -1,0 +1,392 @@
+/*** VSCodeEDU preview fix ***/
+html {
+    background-color: var(--bg-color);
+}
+
+/*** Body ***/
+body {
+    background-color: #f4f4f9; /* Sets the background color of the entire page */
+    font-family: Arial, sans-serif; /* Defines the default font family */
+    margin: 20px; /* Adds space around the edges of the page */
+}
+
+/* === NAVBAR === */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--accent-color-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 60px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    /* background-color: var(--accent-color-medium); */
+    color: greenyellow;
+}
+
+/*** Text ***/
+h1 {
+    font-size: 48px; 
+    font-family: monospace; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+h2 {
+    font-size: 32px; /* Smaller than h1 for hierarchy */
+    color: var(--accent-color-dark); 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+h3 {
+    font-size: 24px; /* Smaller than h2 */
+    color: var(--text-color); 
+    font-family: Arial, sans-serif;
+    margin: 15px 0; 
+}
+
+h4 {
+    font-size: 20px; /* Slightly smaller than h3 */
+    color: var(--accent-color-medium); 
+    text-align: left; 
+}
+
+h5 {
+    font-size: 18px; /* Smaller heading */
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+h6 {
+    font-size: 16px; /* Smallest heading */
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+p {
+    font-size: 16px; 
+    color: var(--text-color); 
+    line-height: 1.6; 
+    margin: 10px 0; /* Vertical spacing */
+    text-align: justify; 
+}
+
+ul {
+    list-style: square; 
+    margin: 15px 0; 
+    padding-left: 30px; 
+}
+
+/*** Buttons ***/
+button {
+    font-size: 16px; 
+    background-color: var(--accent-color-medium); 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: var(--accent-color-dark); /* Darker shade on hover */
+}
+
+/* Theme toggle button unique styling */
+#theme-button {
+    border-radius: 15px;
+    border: 2px solid var(--accent-color-green);
+}
+
+/*** Header ***/
+.header-container {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: var(--accent-color-light); 
+    padding: 20px; 
+    border-bottom: 2px solid var(--accent-color-dark); 
+}
+
+.header-item:nth-of-type(1) {
+    flex: 1; /* Takes available space */
+    text-align: center; 
+}
+
+.header-item:nth-of-type(2) {
+    flex: 2; /* Takes more space for title and buttons */
+    text-align: center;
+}
+
+#header-img {
+    max-width: 150px; /* Limits image size */
+    height: auto; 
+}
+
+.header-button {
+    font-size: 14px; /* Slightly smaller than regular buttons */
+    background-color: var(--accent-color-green); /* Green accent for buttons */
+    color: var(--text-color); /* Readable text color */
+    padding: 8px 16px; /* Smaller padding */
+    margin: 5px; /* Spacing between buttons */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/*** Links Section ***/
+a.block {
+    display: block; 
+    margin: 10px 0; 
+    text-decoration: none; 
+}
+
+/* Pseudo-class: Styles unvisited links */
+a:link {
+    color: var(--accent-color-medium); /* Medium accent for unvisited links */
+}
+
+/* Pseudo-class: Styles visited links */
+a:visited {
+    color: var(--accent-color-darkest); /* Darkest accent for visited links */
+}
+
+/* Pseudo-class: Styles links on hover */
+a:hover {
+    color: var(--accent-color-green); /* Green accent on hover */
+    text-decoration: underline; /* Adds underline for emphasis */
+}
+
+/* Pseudo-class: Styles links when clicked */
+a:active {
+    color: var(--error-color-border); /* Error color for active state */
+}
+
+/* Nested rule for link article headings */
+a.block article h3 {
+    font-size: 20px; /* Specific size for link titles */
+    color: var(--accent-color-medium); 
+    margin: 5px 0; 
+}
+
+/* Nested rule for link article paragraphs */
+a.block article p {
+    font-size: 14px; 
+    color: var(--text-color); 
+    margin: 5px 0; 
+}
+
+/*** Custom Colors ***/
+:root {
+    --bg-color: #a6a0cf;
+    --text-color: #231942;
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
+
+
+/*** Schedule Flexbox ***/
+.schedule-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #cfcaf4;
+    padding: 30px 10px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.schedule-item {
+    flex: 1 1 300px;
+    max-width: 320px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.schedule-item:hover {
+    transform: translateY(-5px);
+}
+
+.schedule-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #2a1b3d;
+    color: #2a1b3d;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+    color: white;
+}
+
+.dark-mode p {
+    color: white;
+}
+
+.dark-mode .header-container {
+    background-color: #2a1b3d;
+    border-bottom: 2px solid #5a4a7a;
+}
+
+.dark-mode .header-item {
+    background-color: #2a1b3d;
+}
+
+.dark-mode .schedule-container {
+    background-color: #3e2a5a;
+}
+
+.dark-mode .schedule-item {
+    background-color: #4a3a6a;
+    color: white;
+}
+
+.dark-mode a.block article h3 {
+    color: #28eb76;
+}
+
+.dark-mode a.block article p {
+    color: white;
+}
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.rsvp-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.rsvp-participants {
+    width: 45%;
+    padding-right: 10px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#rsvp-form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#rsvp-form label {
+    font-weight: bold;
+    color: var(--accent-color-dark);
+}
+
+#rsvp-form input {
+    padding: 8px;
+    border: 1px solid var(--accent-color-medium);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#rsvp-button {
+    background-color: var(--accent-color-green);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#rsvp-button:hover {
+    background-color: var(--accent-color-dark);
+    color: white;
+}
+
+#rsvp-count {
+    text-align: center;
+    font-weight: bold;
+    color: var(--accent-color-medium);
+    margin-bottom: 20px;
+}
+
+/* Dark mode styling for RSVP form */
+.dark-mode #rsvp-form label {
+    color: white;
+}
+
+.dark-mode #rsvp-form input {
+    background-color: #4a3a6a;
+    color: white;
+    border-color: var(--accent-color-green);
+}
+
+.dark-mode #rsvp-form input::placeholder {
+    color: #ccc;
+}
+
+.dark-mode #rsvp-count {
+    color: var(--accent-color-green);
+}
+

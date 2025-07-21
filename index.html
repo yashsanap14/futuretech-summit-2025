@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FutureTech Summit 2025</title>
+        <link rel="icon" href="img\icons8-bot-32.png">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#links">Resources</a></li>
+                <li><a href="https://www.codepath.org">CodePath</a></li>
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+            </ul>
+        </div>
+        <div class="header-container">
+            <div class="header-item">
+                <img id="header-img" src="./img/image.jpg" alt="FutureTech Summit Logo" />
+            </div>
+            <div class="header-item">
+                <h1>FutureTech Summit 2025</h1>
+                <h3>Where Visionaries Meet the Next Big Thing.</h3>
+                <button type="button" class="header-button">Register</button>
+                <button type="button" class="header-button">Learn More</button>
+            </div>
+        </div>
+
+        <h2 id ="about">About the Event</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XhdOA3_e8Nw?si=mi0xyPuu2UbKiZ2b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <p>FutureTech Summit 2025 is a premier global technology conference dedicated to exploring innovation, disruptive trends, and future-ready solutions that are shaping tomorrow’s digital world.</p>
+        <p>The summit convenes visionary industry leaders, seasoned developers, cutting-edge researchers, entrepreneurs, and aspiring students to dive deep into emerging technologies such as artificial intelligence, robotics, blockchain, quantum computing, and sustainability. Attendees will engage in insightful keynote speeches, hands-on technical workshops, interactive coding marathons, startup showcases, and high-impact networking opportunities with global tech influencers.</p>
+        <p>Designed for innovators, technologists, and change-makers, the event empowers participants to collaborate, ideate, and build transformative solutions that advance society and drive technological progress.</p>
+
+        <h3>What to Expect</h3>
+        <h4>Innovating for a Smarter, Safer, and Greener Tomorrow</h4>
+        <ul>
+            <li><b>AI & Innovation:</b> <i>Discover cutting-edge advancements in artificial intelligence driving automation and reshaping industries.</i></li>
+            <li><b>Robotics & Sustainability:</b> <i>Explore eco-conscious technologies in robotics solving real-world environmental challenges.</i></li>
+            <li><b>Cybersecurity & Data Privacy:</b> <i>Learn from experts about securing the digital world and protecting user privacy in an AI-driven age.</i></li>
+        </ul>
+
+        <h2 id="schedule">Event Schedule</h2>
+        <div class="schedule-container">
+            <div class="schedule-item">
+                <img src="./img/innovation_AI.png" alt="AI Innovation" />
+                <h3>Friday Night – Mission Briefing</h3>
+                <p>Kickstart the summit by connecting with fellow developers, forming teams, and exploring futuristic challenges. Discover the mission objectives and align your passion with project goals in an energetic and collaborative environment.</p>
+            </div>
+            <div class="schedule-item">
+                <img src="./img/Robotics.png" alt="Quantum Coding" />
+                <h3>Saturday – Quantum Coding Marathon</h3>
+                <p>Dive into an intense day of innovation! Collaborate on cutting-edge projects, write and test code, and solve real-world problems using AI, robotics, or blockchain. Get mentored by experts and refine your ideas into deployable prototypes.</p>
+            </div>
+            <div class="schedule-item">
+                <img src="./img/cybersecurity.png" alt="Final Presentations" />
+                <h3>Sunday – Final Presentations</h3>
+                <p>Showcase your solutions to peers and judges. Reflect on key takeaways, celebrate your efforts, and receive feedback that prepares you for tech careers. Awards, insights, and future collaboration opportunities await!</p>
+            </div>
+        </div>
+        <!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+<div id="rsvp">
+    <h2>RSVP</h2>
+    <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <p>The simulation is glitching, the continuum is wobbling, and the multiverse is on the verge of collapse—but it's nothing a good coder can't fix. Whether you're debugging an intergalactic software meltdown or finally getting around to fixing your own project, this is your time! Complete the form below to join the effort.</p>
+        </div>
+        <div class="rsvp-participants">
+            <p>🎟️ DJ from Texas has RSVP'd.</p>
+            <p>🎟️ Amy from New York has RSVP'd.</p>
+            <p>🎟️ Teresa from Montana has RSVP'd.</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Ava">
+            
+            <label for="home-state">Home State:</label>
+            <input type="text" id="home-state" name="home-state" value="Virginia">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="ava@example.com">
+        </form>
+        <!-- Submit button -->
+        <button id="rsvp-button">Submit RSVP</button>
+    </div>      
+</div>
+
+        <h2 id = "links">Links</h2>
+        <a class="block" href="https://www.gartner.com/en/articles/top-technology-trends-2025">
+            <article>
+                <h3>Top Tech Trends 2025</h3>
+                <p>A summary of key technology trends forecasted to shape 2025 and beyond.</p>
+            </article>
+        </a>
+        <a class="block" href="https://builtin.com/artificial-intelligence">
+            <article>
+                <h3>Understanding AI</h3>
+                <p>A guide to how artificial intelligence is applied across various industries today.</p>
+            </article>
+        </a>
+        <script src="index.js"></script>
+    </body>
+</html>
